@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-复习</title>
+</head>
+<body>
+
+<!--
+盒子模型：
+    1、外边距 margin
+    2、边框 border
+    3、内边距 padding
+    4、元素
+    盒子的宽高，即width、height返回的是border+padding+内容
+
+外边距折叠：
+    1、如果两个组件都设置了同样值的margin，则会产生折叠，即
+       两个组件的实际外边距只是为其中的一个值
+    2、如果两个组件设置的margin不一样，则采用其中较大的一个
+       值作为两者之间的外边距
+浮动：
+   float属性设置，指的是让当前元素跳出标准文档流排版
+       none：不浮动，默认值，默认元素不浮动
+       left：向左浮动
+       right：向右浮动
+
+清除浮动：
+    第一种：
+        给浮动标签的下一个标签设置clear：both
+    第二种：
+        通过overflow属性设置当前标签内容溢出时采用的处理方式
+        visible：默认的，溢出内容在盒子外显示
+        hidden：隐藏溢出的内容
+        scroll：溢出内容隐藏，同时提供滚动条查看更多
+        auto：同上
+    第三种：
+        利用伪元素处理善后工作，主要利用的方法是after，即
+        元素处理之后的方法调用，在after方法中做clear工作
+
+定位：position
+     1、相对位置relative
+        参照物是自身；原位置保留
+     2、绝对位置absolute
+        1）、如果父组件没有设置position，则参照物是当前所在
+            的窗体，即body；原位置会自动空出来
+        2）、如果父组件设置了position，则参照物就是父组件，
+            原位置还是会自动空出来
+    Z-index：z轴，处理元素层叠的问题，默认值是0，值越大
+            优先级越高；
+            如果元素没有设置position，则Z-index有效值
+            是-1、0、1；
+            如果元素设置了position，则Z-index可以是任意
+            整数；
+   3、固定位置fixed
+      1）、设置这个属性值的元素会跳出标准文档流排版，
+          与float类似
+      2）、参照物是当前可视窗口
+-->
+
+</body>
+</html>

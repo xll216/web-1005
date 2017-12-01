@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-函数</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    /*函数
+     *关键字：function
+     * */
+
+    //方法的声明
+    //方法参数空
+    //返回类型空
+    function add() {
+        var a = 10;
+        var b = 11;
+
+        var c = a + b;
+        //输出加法得到的值
+        console.log(c);
+    }
+
+    //调用
+    add();
+
+    //带方法参数以及返回的方法
+    //不需要声明参数类型
+    //也不需要声明方法的返回类型
+    function sum(a, b) {
+        return a + b;
+    }
+
+    //调用
+    var s = sum(3, 5);
+    console.log(s);
+
+    //匿名方法
+    var ss = function () {
+        return "hello world";
+    }
+
+    console.log(ss);
+
+    console.log("获取匿名function的值："+ss());
+
+
+</script>
+
+
+</body>
+</html>

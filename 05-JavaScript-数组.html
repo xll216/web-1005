@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-数组</title>
+</head>
+<body>
+
+
+<!--JavaScript代码-->
+<script type="text/javascript">
+    /*
+     * 数组定义：
+     *   var arr= new Array();
+     *   var arr = [1,2,3];
+     * 数组特点：
+     * 1、可以不给定数组的长度
+     * 2、可以存储多中类型的数据
+     * 3、通过下标进行元素的访问
+     * */
+    var arr = [1, 2, "adc", "hbb"];
+    //数组的遍历 其中length是数组的属性，所以不需要括号
+    for (var i = 0; i < arr.length; i++) {
+        //根据下标读取数组元素
+        console.log(arr[i]);
+    }
+
+    //特殊性1
+    var arr1 = [];//定义一个空数组
+    /*当取的数组下标超过元素个数，不会报数组越界异常，
+     * 而是直接返回undefined*/
+    console.log(arr1[0]);
+
+    //特殊性2
+    console.log(arr);//直接输出数组对象
+
+    /*通过创建Array对象的方式定义数组*/
+    var arr2 = new Array();
+    //添加元素
+
+    //利用push方法添加一个或者多个元素，尾部追加
+    arr2.push(2, "sdfds", "4", "hello world");
+    arr2.push(111);
+
+    console.log(arr2);
+
+    //头部添加 unshift方法是在数组头部添加一个或者多个元素
+    arr2.unshift(0, "sdfs", 3, 2);
+
+    console.log(arr2);
+
+    //根据下标添加元素
+    arr2[2] = "first";
+    console.log(arr2);
+    /*在JavaScript中数组插入元素比较麻烦，需要重新创建
+     数组，没有直接的insert方法*/
+
+    //删除元素
+
+    //从尾部弹出
+    var t = arr2.pop();//弹出尾部数据，数组删除该元素
+
+    console.log(t);
+    console.log(arr2);//输出弹出后的元素
+
+    //删除某些元素
+    /*
+     * 第一个参数，删除的起始位置，包括当前下标[
+     * 第二个参数，删除的个数
+     * */
+    var arr3 = arr2.splice(2, 3);
+
+    console.log(arr3);
+
+    //第三个参数以后都标示的是添加新的元素
+    arr2.splice(0, 2, 33, 44, 55);
+    console.log(arr2);
+
+    //弹出头部元素，取出的同时会进行删除操作
+    var s = arr2.shift();
+    console.log(s);
+
+    /*
+    * 数组的特殊方法：
+    * unshift、shift、push、pop、splice
+    * */
+
+
+</script>
+
+</body>
+</html>

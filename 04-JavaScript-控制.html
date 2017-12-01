@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-控制语句</title>
+</head>
+<body>
+
+<!--JavaScript代码-->
+<script type="text/javascript">
+    /*
+     * java控制语句：if、else、elseif、for、while、
+     *   switch、dowhile、break、continue、return
+     * */
+    var a = 10;
+    var b = 5;
+    var c = 20;
+
+    /*if语句*/
+    if (a > 10) {
+        console.log("a>10  " + a);
+    } else if (a > 0 && a < 10) {
+        console.log("a > 0 && a<10  " + a);
+    } else {
+        console.log("else  " + a);
+    }
+
+    /*for循环*/
+    for (var i = 0; i < 5; i++) {
+        console.log(i);
+    }
+
+    /*while循环*/
+    while (a > 9) {
+        console.log("while循环" + a);
+        a--;//自减
+    }
+
+    b = 5;
+    /*dowhile*/
+    do {
+        console.log("dowhile:" + b);
+    } while (b > 5)
+
+    c = 2;
+    /*switch*/
+    switch (c) {
+        case 1:
+            console.log("1");
+            break;
+        case 2:
+            console.log("2");
+            break;
+    }
+
+    /*
+    * 运算符：+、-、*、/、%、++、--、+=、-=、*=、/=
+    * 逻辑运算符：|、&、||、&&、!、!=
+    * 赋值运算符：=
+    * 其他：()、[]、{}
+    * */
+
+</script>
+</body>
+</html>
